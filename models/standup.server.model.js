@@ -9,6 +9,12 @@ var standupSchema = new Schema({
     createdOn: {type: Date, default: Date.now}
 });
 
+
+// Expose (export) the model now..
+module.exports= mongoose.model("Standup", standupSchema);
+
+
+/*
 // disabled _id
 var noIdScehma = new Schema({name:String}, {_id:false});
 
@@ -42,3 +48,5 @@ exampleSchema.add({
     impediment: String,
     createdOn: {type: Date, default: Date.now}
 });
+
+    */
